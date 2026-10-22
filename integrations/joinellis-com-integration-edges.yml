@@ -1,0 +1,22 @@
+generated: '2026-10-22'
+method: none
+source:
+- https://zapier.com/apps/joinellis-com/integrations
+- https://zapier.com/apps/joinellis/integrations
+- https://zapier.com/apps/ellis/integrations
+- https://n8n.io/integrations/joinellis-com/
+- https://n8n.io/integrations/joinellis/
+- https://composio.dev/toolkits/joinellis-com
+- https://monid.ai/tools/joinellis-com
+checked:
+- https://composio.dev/toolkits/joinellis-com
+- https://monid.ai/tools/joinellis-com
+- https://n8n.io/integrations/joinellis-com/
+- https://n8n.io/integrations/joinellis/
+- https://zapier.com/apps/ellis/integrations
+- https://zapier.com/apps/joinellis-com/integrations
+- https://zapier.com/apps/joinellis/integrations
+summary: null
+marketplace_apps: []
+edges: []
+templates: []

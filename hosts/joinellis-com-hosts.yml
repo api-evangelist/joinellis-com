@@ -1,0 +1,128 @@
+generated: '2026-10-22'
+method: derived
+source: the pre-flight dossier, apis.yml pointers, spec servers, well-known, vendors -- nothing fetched here
+generator: derive-hosts.py
+summary:
+  hosts: 10
+  own: 2
+  other_domain: 6
+  platform: 2
+  roles:
+  - api
+  - docs
+  - other
+  - portal
+  - status
+  - website
+hosts:
+- host: api.ellis.com
+  found_by:
+  - contract-discovery
+  types: []
+  serves: []
+  registrable_domain: ellis.com
+  role: api
+  relation: other-domain
+- host: api.joinellis.com
+  found_by:
+  - contract-discovery
+  types: []
+  serves: []
+  registrable_domain: joinellis.com
+  role: api
+  relation: own
+- host: app.ellis.com
+  found_by:
+  - pointer
+  - probed
+  - docs-index
+  - contract-discovery
+  - well-known
+  types:
+  - DeveloperPortal
+  serves:
+  - docs
+  registrable_domain: ellis.com
+  role: portal
+  relation: other-domain
+- host: joinellis.com
+  found_by:
+  - pointer
+  - probed
+  - contract-discovery
+  - well-known
+  types:
+  - Website
+  serves: []
+  registrable_domain: joinellis.com
+  role: website
+  relation: own
+- host: status.ellis.com
+  found_by:
+  - pointer
+  - docs-index
+  types:
+  - StatusPage
+  serves:
+  - docs
+  registrable_domain: ellis.com
+  role: status
+  relation: other-domain
+- host: trust.ellis.com
+  found_by:
+  - docs-index
+  types: []
+  serves:
+  - docs
+  registrable_domain: ellis.com
+  role: other
+  relation: other-domain
+- host: www.ellis.com
+  found_by:
+  - pointer
+  - probed
+  - docs-index
+  - contract-discovery
+  - well-known
+  - vendor-detect
+  types:
+  - TermsOfService
+  - PrivacyPolicy
+  - Leadership
+  - Documentation
+  - Pricing
+  - About
+  serves:
+  - docs
+  - hosting
+  vendor: vercel
+  registrable_domain: ellis.com
+  role: docs
+  relation: other-domain
+- host: www.instagram.com
+  found_by:
+  - docs-index
+  types: []
+  serves:
+  - docs
+  registrable_domain: instagram.com
+  role: other
+  relation: other-domain
+- host: www.linkedin.com
+  found_by:
+  - docs-index
+  types: []
+  serves:
+  - docs
+  registrable_domain: linkedin.com
+  role: other
+  relation: platform
+- host: x.com
+  found_by:
+  - docs-index
+  types: []
+  serves:
+  - docs
+  registrable_domain: x.com
+  role: other
+  relation: platform
